@@ -1,25 +1,48 @@
-<!DOCTYPE html>
+{% extends "core/base.html" %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/imagee.png'%}" alt="ProfilePic" class="img-thumbnail"width="200px"height="130px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:70px;">
+                I am <b class="text-warning">Taukir Sheikh</b>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Rem architecto eaque odit accusamus sunt, voluptatum 
+                doloribus aut assumenda? Et reiciendis aspernatur sed 
+                deleniti nesciunt <br><br>
+                explicabo mollitia minima, doloribus officiis esse?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Rem architecto eaque odit accusamus sunt, voluptatum 
+                doloribus aut assumenda? Et reiciendis aspernatur sed 
+                deleniti nesciunt 
+                explicabo mollitia minima, doloribus officiis esse?
+                Rem architecto eaque odit accusamus sunt, voluptatum 
+                doloribus aut assumenda? Et reiciendis aspernatur sed 
+                deleniti nesciunt 
+                explicabo mollitia minima, doloribus officiis esse?
+                Rem architecto eaque odit accusamus sunt, voluptatum 
+                doloribus aut assumenda? Et reiciendis aspernatur sed 
+                deleniti nesciunt 
+                explicabo mollitia minima, doloribus officiis esse?
+                Rem architecto eaque odit accusamus sunt, voluptatum 
+                doloribus aut assumenda? Et reiciendis aspernatur sed 
+                deleniti nesciunt 
+                explicabo mollitia minima, doloribus officiis esse?
+                Rem architecto eaque odit accusamus sunt, voluptatum 
 
 
-</head>
-<body>
+              
+            </p>
+        </div>
+    </div>
 
-
-
-
-    
-    <script src="{% static 'core/js/jquery.js' %}"></script>
-    <script src="{% static 'core/js/popper.js' %}"></script>
-    <script src="{% static 'core/js/all.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.js' %}"></script>
-
-</body>
-</html>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{%url 'contact' %}" class="btn btn-outline-info my-3">Contact Me</a>
+    </div>
+</div>
+{% endblock content %}
