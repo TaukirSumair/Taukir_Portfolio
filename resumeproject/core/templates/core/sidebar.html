@@ -1,14 +1,16 @@
  {% load static %}
 <div class="border-right border-warning h-100">
     <div class="text-center"> 
-        <img src="{% static 'core/images/imagee.png' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
-        <h3 class="text-white mt-3">Taukir Sheikh</h3>
+        <img src="{% static 'core/images/Untitled.jpg' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h3 class="text-white mt-3">Taukir Sumair</h3>
+        <p class="text-white">Python Developer <br>|| Data Engineer || QA Engineer</p>
     </div>
     <hr class="border-light">
     <nav class="nav flex-column text-center">
         <a href="{% url 'home' %}" class="nav-link {{home}} ">Home</a>
-        <a href="{% url 'services'%}" class="nav-link {{services}}">Service</a>
-        <a href="{% url 'skills' %}" class="nav-link {{skills}}">Skills</a>
+        <a href="{% url 'services'%}" class="nav-link {{services}}">Skills</a>
+        <a href="#" class="nav-link">Certifications</a>
+        <a href="{% url 'skills' %}" class="nav-link {{skills}}">Education & Awards</a>
         <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
     </nav>
 </div>
