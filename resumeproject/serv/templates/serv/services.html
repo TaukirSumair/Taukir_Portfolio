@@ -1,115 +1,249 @@
 {% extends "core/base.html" %}
 {% block content %} 
 
+<style>
+    .skill-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .skill-header .toggle-icon {
+        margin-left: 10px;
+        {% comment %} margin-top:10px {% endcomment %}
+        font-size: 0.5em; /* Adjust the size as needed */
+    }
+    .sub-skills {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .col-sm-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+    
+</style>
+
 <div class="container mt-5">
     <h1 class="text-warning mb-5 border-bottom">Skills & Certifications</h1>
+
     
-    {% comment %} Row 1--------------------- {% endcomment %}
-
     <div class="row text-white text-center mb-5">
-        {% comment %} Row one col one {% endcomment %}
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3 i-colo"></i>
-            <h3>Python</h3>
-            <p class="ss-color">Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python1" role="button" aria-expanded="false" aria-controls="python1">
+                Python <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2 " id="python1">
+                <ul>
+                    <li>Basic Syntax and Data Types</li>
+                    <li>Conditionals and Loops</li>
+                    <li>OOPs & Functions</li>
+                    <li>Data Structures</li>
+                    <li>Modules and Packages</li>
+                </ul>
+            </div>
         </div>
 
-        {% comment %} Row one col two {% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python2" role="button" aria-expanded="false" aria-controls="python2">
+                SQL <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python2">
+                <ul>
+                    <li>Basic SQL Syntax</li>
+                    <li>Querying Data</li>
+                    <li>Joins</li>
+                    <li>Aggregation Functions</li>
+                    <li>Indexes and Optimization</li>
+                </ul>
+            </div>
         </div>
 
-        {% comment %} Row one col three{% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python3" role="button" aria-expanded="false" aria-controls="python3">
+                Django <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python3">
+                <ul>
+                    <li>Creating a Django Project</li>
+                    <li>Models</li>
+                    <li>Views</li>
+                    <li>Templates</li>
+                    <li>Forms</li>
+                </ul>
+            </div>
         </div>
-
-    </div>
-
-    {% comment %} Row 2--------------------- {% endcomment %}
-
-    <div class="row text-white text-center mb-5">
-        {% comment %} Row Two col one {% endcomment %}
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
-        {% comment %} Row Two col two {% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
-        {% comment %} Row Two col three{% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
-    </div>
-
-    {% comment %} Row 3--------------------- {% endcomment %}
-
-    <div class="row text-white text-center mb-5">
-        {% comment %} Row three col one {% endcomment %}
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
-        {% comment %} Row three col two {% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
-        {% comment %} Row three col three{% endcomment %}
-
-        <div class="col sm-4">
-            <i class="fa-brands fa-python fa-2x mb-3"></i>
-            <h3>Python</h3>
-            <p>Lorem ipsum dolor 
-                sit amet 
-                consectetur</p>
-        </div>
-
     </div>
 
 
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python4" role="button" aria-expanded="false" aria-controls="python4">
+                Django Rest Framework <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python4">
+                <ul>
+                    <li>Serializers</li>
+                    <li>Views</li>
+                    <li>Authentication</li>
+                    <li>Permissions and Authorization</li>
+                    <li>Request and Response Handling</li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python5" role="button" aria-expanded="false" aria-controls="python5">
+                Apache Spark <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python5">
+                <ul>
+                    <li>In-Memory Processing</li>
+                    <li>Distributed Computing</li>
+                    <li>Resilient Distributed Dataset</li>
+                    <li>Spark SQL</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python6" role="button" aria-expanded="false" aria-controls="python6">
+                Apache Kafka <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python6">
+                <ul>
+                    <li>Distributed Messaging System</li>
+                    <li>High-throughput, Low-latency</li>
+                    <li>Scalable and Fault-tolerant</li>
+                    <li>Stream Processing and Event-driven Architecture</li>
+                    <li>Integration with various data sources and systems</li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python7" role="button" aria-expanded="false" aria-controls="python7">
+                Apache Airflow <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python7">
+                <ul>
+                    <li>Workflow Automation</li>
+                    <li>Directed Acyclic Graphs (DAGs) for Workflow Definition</li>
+                    <li>Dependency Management and Task Scheduling</li>
+                    <li>Extensible through Custom Operators and Hooks</li>
+                    <li>Monitoring and Alerting for Workflows</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python8" role="button" aria-expanded="false" aria-controls="python8">
+                ETL <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python8">
+                <ul>
+                    <li>Data Extraction from Various Sources</li>
+                    <li>Data Transformation (Cleaning, Formatting, Aggregating)</li>
+                    <li>Data Loading into Target Data Warehouse or Database</li>
+                    <li>Automated Workflow for Data Integration</li>
+                    <li>Support for Batch and Real-time Data Processing</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python9" role="button" aria-expanded="false" aria-controls="python9">
+                AWS <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python9">
+                <ul>
+                    <li>VPC</li>
+                    <li>EC2</li>
+                    <li>S3</li>
+                    <li>RDS</li>
+                    <li>Lambda</li>
+                    <li>EKS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python7" role="button" aria-expanded="false" aria-controls="python7">
+                Apache Airflow <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python7">
+                <ul>
+                    <li>Workflow Automation</li>
+                    <li>Directed Acyclic Graphs (DAGs) for Workflow Definition</li>
+                    <li>Dependency Management and Task Scheduling</li>
+                    <li>Extensible through Custom Operators and Hooks</li>
+                    <li>Monitoring and Alerting for Workflows</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python8" role="button" aria-expanded="false" aria-controls="python8">
+                ETL <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python8">
+                <ul>
+                    <li>Data Extraction from Various Sources</li>
+                    <li>Data Transformation (Cleaning, Formatting, Aggregating)</li>
+                    <li>Data Loading into Target Data Warehouse or Database</li>
+                    <li>Automated Workflow for Data Integration</li>
+                    <li>Support for Batch and Real-time Data Processing</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3 class="skill-header" data-toggle="collapse" href="#python9" role="button" aria-expanded="false" aria-controls="python9">
+                AWS <span class="toggle-icon">&#x25BC;</span>
+            </h3>
+            <div class="collapse sub-skills ml-2" id="python9">
+                <ul>
+                    <li>VPC</li>
+                    <li>EC2</li>
+                    <li>S3</li>
+                    <li>RDS</li>
+                    <li>Lambda</li>
+                    <li>EKS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="text-center">
+        <a href="#" class="btn btn-outline-info my-3">Download Resume</a>
+    </div>
 </div>
-
-
 
 {% endblock content %}

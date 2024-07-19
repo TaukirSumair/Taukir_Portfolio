@@ -4,7 +4,35 @@
 <div class="mt-5">
     <div class="text-center">
         <img src="{% static 'core/images/imagee.png'%}" alt="ProfilePic" class="img-thumbnail"width="200px"height="130px">
-    </div>
+    </div> 
+
+    {% comment %} <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'core/images/ABC.jpg' %}" class="d-block w-100" alt="..." style="width: 5px; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/images/imagee.png' %}" class="d-block w-100" alt="..." style="width: 500px; height: 300px;">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'core/images/image3.jpg' %}" class="d-block w-100" alt="..." style="width: 500px; height: 300px;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> {% endcomment %}
+
     <div class="mt-5 text-white mx-5 text-justify">
         <h1 class="font-weight-bold st-font">Hello,</h1>
         <div class="px-4" style="line-height:2rem;">
@@ -39,7 +67,7 @@
 
     <div class="text-center">
         <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
-        <a href="{%url 'contact' %}" class="btn btn-outline-info my-3">Contact Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact Me</a>
     </div>
 </div>
 {% endblock content %}
